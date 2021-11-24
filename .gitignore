@@ -10,6 +10,9 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+#Custome Git Ignore
+Rayah Project/Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@0.1.21-preview/data~/payload.tar.7z
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 

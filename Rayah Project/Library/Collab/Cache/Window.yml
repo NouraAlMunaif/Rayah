@@ -14,20 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/ObjectOrderingJourneyTask.meta
-    - Assets/Scripts/ObjectOrderingJourneyTask/MouseDrag.cs
-    - Assets/Scripts/ObjectOrderingJourneyTask/MouseDrag.cs.meta
-    - Assets/Scripts/ObjectOrderingJourneyTask/ObjectOrderGameManager.cs
-    - Assets/Scripts/ObjectOrderingJourneyTask/ObjectOrderGameManager.cs.meta
-    - Assets/Scripts/ObjectOrderingJourneyTask/ObjectOrderingUIManager.cs
-    - Assets/Scripts/ObjectOrderingJourneyTask/ObjectOrderingUIManager.cs.meta
-    - Assets/Scripts/ObjectOrderingJourneyTask/OrderSelectButtons.cs
-    - Assets/Scripts/ObjectOrderingJourneyTask/OrderSelectButtons.cs.meta
-    - Assets/Scripts/ObjectOrderingJourneyTask/SelectableObject.cs
-    - Assets/Scripts/ObjectOrderingJourneyTask/SelectableObject.cs.meta
+    - Assets/Scripts/MenuAR/MenuARUIManager.cs
     - Assets/StreamingAssets/build_info
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 00000000000000000000000000
+    m_Values: 0000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

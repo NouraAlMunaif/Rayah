@@ -6,11 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ObjectFindingTask.unity
+    path: Assets/Scenes/0Menu.unity
+    guid: 6c42e85ea8e65424fbe64501fce60e62
+  - enabled: 1
+    path: Assets/Scenes/1MenuAR.unity
+    guid: 82348ed1e0d43544fb9b3ba6f705ec52
+  - enabled: 1
+    path: Assets/Scenes/QRCodeTrigger.unity
+    guid: 0a99cbf1307bbd24c92fd31cbb776108
+  - enabled: 1
+    path: Assets/Scenes/2ObjectFindingTask.unity
     guid: a5a9bbf4d6331bc458cbea58c481ab10
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MCQs.unity
     guid: d370a97535824da4db8fec9bdff55933
+  - enabled: 0
+    path: Assets/Scenes/ObjectOrderingJourneyTask.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Selfie.unity
+    guid: c217c10aff73f0d418ac7b25bdcfe7d2
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 11e100eee3fae6a4f8be0bd973011ea4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ce0d8db7ef183794ab53d4366fca6ab6, type: 2}

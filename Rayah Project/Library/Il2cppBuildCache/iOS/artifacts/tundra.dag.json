@@ -20,54 +20,56 @@
       "DebugActionIndex": 0
     },
     {
-      "Annotation": "Il2Cpp C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2020.3.20f1\\Editor\\Data\\il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe\" --directory=\"C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
+      "Annotation": "Il2Cpp /Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
+      "Action": "\"/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
       "Inputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/LeanCommon.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/LeanTouch.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Mono.Security.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/mscorlib.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Configuration.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Core.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Xml.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARFoundation.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARKit.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARSubsystems.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ARModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.dll",
-        "C:/Nima/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll",
-        "\"C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\""
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/LeanCommon.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/LeanTouch.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/NativeGallery.Runtime.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/System.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARFoundation.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARKit.FaceTracking.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARKit.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.ARSubsystems.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ARModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Temp/StagingArea/Data/Managed/mscorlib.dll",
+        "\"/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\""
       ],
       "Outputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -80,13 +82,13 @@
       "DebugActionIndex": 1
     },
     {
-      "Annotation": "Copy Additional C++ File C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
-      "Action": "copy \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\additionalCppFiles\\UnityClassRegistration.cpp\" \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" && copy /b \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" +,, \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp\" ",
       "Inputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
       ],
       "Outputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -103,13 +105,13 @@
       "DebugActionIndex": 2
     },
     {
-      "Annotation": "Copy Additional C++ File C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
-      "Action": "copy \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\additionalCppFiles\\UnityICallRegistration.cpp\" \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" && copy /b \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" +,, \"C:\\Nima\\Unity Projects\\Rayah Project\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp\" ",
       "Inputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
       ],
       "Outputs": [
-        "C:/Nima/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
+        "/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -127,6 +129,9 @@
     }
   ],
   "FileSignatures": [
+    {
+      "File": "../../../../../../Library"
+    },
     {
       "File": "../../../Temp/StagingArea/Data/Managed"
     },

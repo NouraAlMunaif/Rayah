@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MCQs_UI_Controller : MonoBehaviour
 {
@@ -104,6 +105,11 @@ public class MCQs_UI_Controller : MonoBehaviour
         }
         StartCoroutine(TryAgain());
 
+    }
+
+    public void MainMenu() // Go to Trigger Scene
+    {
+        SceneManager.LoadScene("QRCodeTrigger");
     }
 
     IEnumerator TryAgain()

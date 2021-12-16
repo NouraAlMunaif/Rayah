@@ -24,7 +24,7 @@ public class AutoPlacementOfObjectsInPlane : MonoBehaviour
             placedObject = Instantiate(placedPrefab, arPlane.transform.position, Quaternion.identity);
             spawnedObjectManager.DisplaySpawnedObject(placedObject, false);
             uIManager.DisplayIntroductionCanvas(false);
-            uIManager.DisplayStartGameCanvas(true);
+            uIManager.DisplayUIAfterIntro();
         }
     }
 

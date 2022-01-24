@@ -2,23 +2,41 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ARFeatheredPlaneMeshVisualizer
+    - AllRightAnswer
     - AnswerScript
     - AutoPlacementOfObjectsInPlane
-    - ChangeScene
-    - ImageRecognition
+    - CaptureScreenShot
+    - CornerMenuControl
+    - CurvedUI
     - ImageTracking
     - LightEstimation
     - MCQs_Spawn_Manager
     - MCQs_UI_Controller
     - MenuARUIManager
     - MenuUIManager
+    - MouseDrag
     - ObjectFindingTask.GameManager
     - ObjectFindingTaskUIManager
+    - ObjectOrderGameManager
+    - ObjectOrderingUIManager
+    - OrderSelectButtons
     - PointerArrow
     - Reporter
     - ReporterMessageReceiver
+    - SelectableObject
     - SpawnedObject
     - SpawnedObjectManager
+    - StartSetting
+    LeanTouch.dll:
+    - Lean.Touch.LeanDragTranslate
+    - Lean.Touch.LeanFingerDown
+    - Lean.Touch.LeanSelectByFinger
+    - Lean.Touch.LeanSelectableByFinger
+    - Lean.Touch.LeanTouch
+    TiltBrushToolkitRuntime.dll:
+    - TiltBrushToolkit.BrushDescriptor
+    - TiltBrushToolkit.BrushManifest
+    - TiltBrushToolkit.TbtSettings
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
@@ -34,6 +52,9 @@ ScriptsOnlyBuild:
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
+    - UnityEngine.XR.ARFoundation.ARFace
+    - UnityEngine.XR.ARFoundation.ARFaceManager
+    - UnityEngine.XR.ARFoundation.ARFaceMeshVisualizer
     - UnityEngine.XR.ARFoundation.ARInputManager
     - UnityEngine.XR.ARFoundation.ARPlane
     - UnityEngine.XR.ARFoundation.ARPlaneManager
@@ -100,35 +121,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1502}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1504}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1972}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 2366}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2458}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3200}
     - Class: 114
-      Script: {instanceID: 3670}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 3872}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 5388}
+      Script: {instanceID: 4808}
+    - Class: 114
+      Script: {instanceID: 5184}
+    - Class: 114
+      Script: {instanceID: 5206}
+    - Class: 114
+      Script: {instanceID: 5686}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -165,37 +192,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1502}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1504}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -246,62 +273,64 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 666}
+      Script: {instanceID: 764}
     - Class: 114
-      Script: {instanceID: 1502}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1504}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1884}
     - Class: 114
-      Script: {instanceID: 2394}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2418}
+      Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3512}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3996}
     - Class: 114
-      Script: {instanceID: 3918}
+      Script: {instanceID: 4138}
     - Class: 114
-      Script: {instanceID: 3942}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 4214}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4610}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 5008}
     - Class: 114
-      Script: {instanceID: 4836}
+      Script: {instanceID: 5106}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -323,84 +352,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
-    Assets/Scenes/MCQs.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1504}
-    - Class: 114
-      Script: {instanceID: 1506}
-    - Class: 114
-      Script: {instanceID: 1508}
-    - Class: 114
-      Script: {instanceID: 1674}
-    - Class: 114
-      Script: {instanceID: 1774}
-    - Class: 114
-      Script: {instanceID: 1858}
-    - Class: 114
-      Script: {instanceID: 2608}
-    - Class: 114
-      Script: {instanceID: 2644}
-    - Class: 114
-      Script: {instanceID: 2730}
-    - Class: 114
-      Script: {instanceID: 2742}
-    - Class: 114
-      Script: {instanceID: 2798}
-    - Class: 114
-      Script: {instanceID: 3342}
-    - Class: 114
-      Script: {instanceID: 3522}
-    - Class: 114
-      Script: {instanceID: 3526}
-    - Class: 114
-      Script: {instanceID: 3530}
-    - Class: 114
-      Script: {instanceID: 4054}
-    - Class: 114
-      Script: {instanceID: 4338}
-    - Class: 114
-      Script: {instanceID: 4362}
-    - Class: 114
-      Script: {instanceID: 4916}
-    - Class: 114
-      Script: {instanceID: 5182}
-    - Class: 114
-      Script: {instanceID: 19502}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 1818360608
-      Script: {instanceID: 0}
-    Assets/Scenes/QRCodeTrigger.unity:
+    Assets/Scenes/ObjectOrderingJourneyTask.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -419,60 +371,155 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1504}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1548}
+      Script: {instanceID: 1606}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 1682}
+      Script: {instanceID: 2036}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 2470}
     - Class: 114
-      Script: {instanceID: 1998}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 2900}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2966}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3368}
     - Class: 114
-      Script: {instanceID: 3342}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 3846}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4758}
+      Script: {instanceID: 4610}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 5490}
     - Class: 114
-      Script: {instanceID: 5150}
+      Script: {instanceID: 5554}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/QRCodeTrigger.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 1600}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 1604}
+    - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
+      Script: {instanceID: 1648}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1972}
+    - Class: 114
+      Script: {instanceID: 2052}
+    - Class: 114
+      Script: {instanceID: 2122}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 2800}
+    - Class: 114
+      Script: {instanceID: 2900}
+    - Class: 114
+      Script: {instanceID: 2958}
+    - Class: 114
+      Script: {instanceID: 3260}
+    - Class: 114
+      Script: {instanceID: 3534}
+    - Class: 114
+      Script: {instanceID: 3716}
+    - Class: 114
+      Script: {instanceID: 3720}
+    - Class: 114
+      Script: {instanceID: 4280}
+    - Class: 114
+      Script: {instanceID: 4332}
+    - Class: 114
+      Script: {instanceID: 4610}
+    - Class: 114
+      Script: {instanceID: 5020}
+    - Class: 114
+      Script: {instanceID: 5194}
+    - Class: 114
+      Script: {instanceID: 5436}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -488,6 +535,269 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selfie.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 1604}
+    - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1972}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 2800}
+    - Class: 114
+      Script: {instanceID: 2820}
+    - Class: 114
+      Script: {instanceID: 2900}
+    - Class: 114
+      Script: {instanceID: 2958}
+    - Class: 114
+      Script: {instanceID: 3534}
+    - Class: 114
+      Script: {instanceID: 3716}
+    - Class: 114
+      Script: {instanceID: 3720}
+    - Class: 114
+      Script: {instanceID: 3744}
+    - Class: 114
+      Script: {instanceID: 4280}
+    - Class: 114
+      Script: {instanceID: 4610}
+    - Class: 114
+      Script: {instanceID: 5282}
+    - Class: 114
+      Script: {instanceID: 5530}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Task3_MCQs.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 1604}
+    - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1884}
+    - Class: 114
+      Script: {instanceID: 1972}
+    - Class: 114
+      Script: {instanceID: 2472}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 2800}
+    - Class: 114
+      Script: {instanceID: 2886}
+    - Class: 114
+      Script: {instanceID: 2900}
+    - Class: 114
+      Script: {instanceID: 2958}
+    - Class: 114
+      Script: {instanceID: 3260}
+    - Class: 114
+      Script: {instanceID: 3534}
+    - Class: 114
+      Script: {instanceID: 3716}
+    - Class: 114
+      Script: {instanceID: 3720}
+    - Class: 114
+      Script: {instanceID: 3724}
+    - Class: 114
+      Script: {instanceID: 4060}
+    - Class: 114
+      Script: {instanceID: 4280}
+    - Class: 114
+      Script: {instanceID: 4332}
+    - Class: 114
+      Script: {instanceID: 4586}
+    - Class: 114
+      Script: {instanceID: 4610}
+    - Class: 114
+      Script: {instanceID: 5190}
+    - Class: 114
+      Script: {instanceID: 5472}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1818360608
+      Script: {instanceID: 0}
+    Assets/Scenes/Task7_MCQs.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 1604}
+    - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
+      Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1884}
+    - Class: 114
+      Script: {instanceID: 1972}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 2800}
+    - Class: 114
+      Script: {instanceID: 2886}
+    - Class: 114
+      Script: {instanceID: 2900}
+    - Class: 114
+      Script: {instanceID: 2958}
+    - Class: 114
+      Script: {instanceID: 3260}
+    - Class: 114
+      Script: {instanceID: 3534}
+    - Class: 114
+      Script: {instanceID: 3716}
+    - Class: 114
+      Script: {instanceID: 3720}
+    - Class: 114
+      Script: {instanceID: 3724}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4060}
+    - Class: 114
+      Script: {instanceID: 4280}
+    - Class: 114
+      Script: {instanceID: 4332}
+    - Class: 114
+      Script: {instanceID: 4610}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1818360608
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -526,6 +836,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 757a863ce53abbfd500ce36b4eceebce
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: TurbulentMotion
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -619,6 +935,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: InjectorBase
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReporterGUI
@@ -636,6 +958,12 @@ ScriptsOnlyBuild:
     className: SelectableObject
   - hash:
       serializedVersion: 2
+      Hash: 290cca8be7d010864b466dcdf2b8ccf1
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: JitterMotionGear
+  - hash:
+      serializedVersion: 2
       Hash: 76b7e183d9d3382d8f2b9ae1c01d0aa6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -648,16 +976,28 @@ ScriptsOnlyBuild:
     className: LeanTwistRotate
   - hash:
       serializedVersion: 2
-      Hash: 07c7d375306b4fea3cc0b6fc973c75ac
+      Hash: 2bc86aa590e572d2dfca1c86fb76977a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ImageTracking
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: GenericAudioInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPointCloudMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: ba32794d96907d54bb74e198fde79203
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: GenericGradientGear
   - hash:
       serializedVersion: 2
       Hash: 7a7eebed05fb8b44e037d9a7a90412ea
@@ -696,6 +1036,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 76daf5bb5658d64598df0c91b951a938
+    assemblyName: TiltBrushToolkitRuntime.dll
+    namespaceName: TiltBrushToolkit
+    className: VisualizerManager
+  - hash:
+      serializedVersion: 2
       Hash: 1a0dd7ad4ca549693ba556455716f223
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
@@ -708,10 +1054,28 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
+      Hash: 556241b6d651f7d474dfcaa614cbc619
+    assemblyName: TiltBrushToolkitRuntime.dll
+    namespaceName: TiltBrushToolkit
+    className: BrushDescriptor
+  - hash:
+      serializedVersion: 2
+      Hash: 2fb3df93e8e3bc521807939bada23109
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: GlobalSettingGear
+  - hash:
+      serializedVersion: 2
       Hash: bab8f279b62dfc369d32bd47be205e63
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
     className: LeanSelectableByFinger
+  - hash:
+      serializedVersion: 2
+      Hash: 4e3ee1b481d046b79baee269eae531fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CurvedUI
   - hash:
       serializedVersion: 2
       Hash: dc1bf7169b005112f7a4da5a6b15f0c4
@@ -726,7 +1090,13 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: cc578853a01b5eacf482c6432bb6ba1e
+      Hash: c82e7b80738845643d5235c356ad382c
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: Reaktor
+  - hash:
+      serializedVersion: 2
+      Hash: c45311805337ec485e282720cdb04875
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuARUIManager
@@ -846,6 +1216,18 @@ ScriptsOnlyBuild:
     className: LeanFingerDown
   - hash:
       serializedVersion: 2
+      Hash: 64e9d86613ea5b37016c710ccabfc926
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: VariableMotion
+  - hash:
+      serializedVersion: 2
+      Hash: a8dc23122b9046850b05bc6b87a6a3a2
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: GenericTriggerGear
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: NativeGallery.Runtime.dll
     namespaceName: NativeGalleryNamespace
@@ -856,6 +1238,24 @@ ScriptsOnlyBuild:
     assemblyName: LeanCommon.dll
     namespaceName: Lean.Common
     className: LeanSelect
+  - hash:
+      serializedVersion: 2
+      Hash: 9850e9c9d2b92eae8edfb9566b9c8531
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: MaterialGear
+  - hash:
+      serializedVersion: 2
+      Hash: e73dcea1a538a03df756e069f391ac14
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 23c93145fa36af0dd98da56548f35e97
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: AnimatorGear
   - hash:
       serializedVersion: 2
       Hash: 0c5108545fb925730d4d5887ebcdd20c
@@ -918,6 +1318,18 @@ ScriptsOnlyBuild:
     className: ReporterMessageReceiver
   - hash:
       serializedVersion: 2
+      Hash: 4a79f7db6b8cfa96982e97e0a52200c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CornerMenuControl
+  - hash:
+      serializedVersion: 2
+      Hash: bec9ed15d6dda7b1eba4ab613b777188
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: AudioInjector
+  - hash:
+      serializedVersion: 2
       Hash: 1268406d3f2e4b2c2b670b560b6db769
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -930,10 +1342,22 @@ ScriptsOnlyBuild:
     className: AROcclusionManager
   - hash:
       serializedVersion: 2
+      Hash: 8c50a9b0dd3bb39b1c3e716689206030
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: ConstantMotion
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseDrag
+  - hash:
+      serializedVersion: 2
+      Hash: 4b916a435be613c417c7ef9ff576c96e
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: TransformGear
   - hash:
       serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
@@ -972,6 +1396,12 @@ ScriptsOnlyBuild:
     className: LeanSelectableGraphicColor
   - hash:
       serializedVersion: 2
+      Hash: 1e2b489c406ea049c7a245296d69ec74
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: ParticleSystemGear
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -990,7 +1420,7 @@ ScriptsOnlyBuild:
     className: ImageRecognition
   - hash:
       serializedVersion: 2
-      Hash: c1befe3a8e056ed29dd581a6fe4a129d
+      Hash: 9dd877a8cf5afc51996ede5e591aba43
     assemblyName: Assembly-CSharp.dll
     namespaceName: ObjectFindingTask
     className: GameManager
@@ -1068,6 +1498,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 1320a1e1fcec7687386e597990954d93
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: ConstantMotionGear
+  - hash:
+      serializedVersion: 2
       Hash: a7b1ed766149a75996bd4ad8159c2d16
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1090,6 +1526,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TestReporter
+  - hash:
+      serializedVersion: 2
+      Hash: 7df5df4847d72bc804078821c7edef70
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AllRightAnswer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1158,6 +1600,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 5a1a3b1016407950df34ce1389e6efa1
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: BandPassFilter
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1182,7 +1630,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 8889e339039d236557fe545867aac5a6
+      Hash: 6488edd875cb49ee6f3eef820e678d8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectFindingTaskUIManager
@@ -1204,6 +1652,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TiltBrushToolkitRuntime.dll
+    namespaceName: TiltBrushToolkit
+    className: VisualizerAudioInput
+  - hash:
+      serializedVersion: 2
+      Hash: 03d41d980d8836f18c145e31be47e855
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: LightGear
   - hash:
       serializedVersion: 2
       Hash: 625e4fd6f88b90d1ee9e7c089c3f450d
@@ -1230,6 +1690,18 @@ ScriptsOnlyBuild:
     className: ARBackgroundRendererFeature
   - hash:
       serializedVersion: 2
+      Hash: 85f9ac9585090f776111f2b136de0f46
+    assemblyName: TiltBrushToolkitRuntime.dll
+    namespaceName: TiltBrushToolkit
+    className: BrushManifest
+  - hash:
+      serializedVersion: 2
+      Hash: f54d10f54e3f68369297fb777a9a1bfa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartSetting
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1248,10 +1720,22 @@ ScriptsOnlyBuild:
     className: LeanLinkTo
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MeshGenerator
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: da1725dfd847f8ee5273daa6b17a4c42
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IdleRandomBehaviour
   - hash:
       serializedVersion: 2
       Hash: 31466d5ab9f247d6013e2b280a930754
@@ -1362,10 +1846,22 @@ ScriptsOnlyBuild:
     className: LeanRoll
   - hash:
       serializedVersion: 2
+      Hash: 9f0f6dfe4796711a5cdd10a1be69897b
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: Planter
+  - hash:
+      serializedVersion: 2
       Hash: ef705ae677d649d6c0ff3b4060963abd
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedObjectManager
+  - hash:
+      serializedVersion: 2
+      Hash: 46327a17cb06b41222c405eb7b23724d
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: SpawnerGear
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1386,10 +1882,16 @@ ScriptsOnlyBuild:
     className: LeanDestroy
   - hash:
       serializedVersion: 2
-      Hash: 6e5599d01f237a74df0f47dbdad8a2d6
+      Hash: 925dda2b07910cfad79bd118a354c796
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AutoPlacementOfObjectsInPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 60364a45487116c5ae9012127037db2d
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: ObjectParticleSystem
   - hash:
       serializedVersion: 2
       Hash: 01473135d671a71d740e507b04eb93da
@@ -1446,13 +1948,19 @@ ScriptsOnlyBuild:
     className: LeanFingerSwipe
   - hash:
       serializedVersion: 2
+      Hash: bbc54d39fa9a03746342aba54191f9b2
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: CameraGear
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: b01631a3abfd065f3830519cb32b6c63
+      Hash: 237209e71dc9726987dfb788705bfcdf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MCQs_UI_Controller
@@ -1468,6 +1976,12 @@ ScriptsOnlyBuild:
     assemblyName: LeanTouch.dll
     namespaceName: Lean.Touch
     className: LeanDragTrail
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef7130aab7f32b0dd7900a4a95ee2d5
+    assemblyName: TiltBrushToolkitRuntime.dll
+    namespaceName: TiltBrushToolkit
+    className: TbtSettings
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -1498,6 +2012,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedImageManager
+  - hash:
+      serializedVersion: 2
+      Hash: b105ad4e87fd0e7ea5a0c2cb90d0c9d7
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: SelfDestruction
   - hash:
       serializedVersion: 2
       Hash: 43dba032da74bfc8344bf5098bd6e13b
@@ -1537,6 +2057,18 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: SystemAudioInjector
+  - hash:
+      serializedVersion: 2
+      Hash: faf557152bb8f243e07b603f6256d46b
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: JitterMotion
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
@@ -1564,11 +2096,20 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuUIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 11e6636f4ef5b6fe1dc58d7d3384ed21
+    assemblyName: TiltBrushToolkitThirdParty.dll
+    namespaceName: Reaktion
+    className: GenericCurveGear
   platform: 9
   scenePathNames:
   - Assets/Scenes/0Menu.unity
   - Assets/Scenes/1MenuAR.unity
   - Assets/Scenes/QRCodeTrigger.unity
   - Assets/Scenes/2ObjectFindingTask.unity
-  - Assets/Scenes/MCQs.unity
+  - Assets/Scenes/ObjectOrderingJourneyTask.unity
+  - Assets/Scenes/Task3_MCQs.unity
+  - Assets/Scenes/Task7_MCQs.unity
+  - Assets/Scenes/Selfie.unity
   playerPath: /Users/nimajamalian/Documents/Unity Projects/Builds/Rayah Project

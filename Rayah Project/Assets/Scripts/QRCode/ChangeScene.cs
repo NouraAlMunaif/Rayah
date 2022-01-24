@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public static ChangeScene instance;
     public string scenename;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         StartCoroutine(TriggerScene());
@@ -14,6 +21,6 @@ public class ChangeScene : MonoBehaviour
     IEnumerator TriggerScene()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("scenename");
+        SceneManager.LoadScene(scenename);
     }
 }

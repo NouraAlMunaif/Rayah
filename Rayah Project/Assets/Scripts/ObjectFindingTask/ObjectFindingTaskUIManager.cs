@@ -17,10 +17,14 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
     [Header("Game Canvas")]
     [SerializeField] private GameObject startGameCanvas;
     [SerializeField] private GameObject gameCanvas;
-    [SerializeField] private GameObject winText;
     [SerializeField] private SpawnedObjectManager spawnedObjectManager;
-    [SerializeField] List<Image> foundObjectImages;
+    [SerializeField] private GameObject content;
+    [SerializeField] private List<Image> foundObjectImages;
 
+    [Header("Task Completed Canvas")]
+    [SerializeField] private GameObject taskCompletedGameCanvas;
+    [SerializeField] private Image robotImage;
+    [SerializeField] private List<Sprite> robotImages;
 
     [Header("Game Manger")]
     [SerializeField] private GameManager gameManager;
@@ -39,7 +43,7 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
         }
         else
         {//when we are not in the instruction mode
-
+            DisplayStartGameCanvas(true);
         }
     }
     #endregion
@@ -55,6 +59,7 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
 
     public void DiplayTrialTaskComplete()
     {
+        robotImage.sprite = robotImages[PlayerData.characterNumber];
         gameManager.DisplayPointerArrow(false);
         introTextUI.SetActive(false);
         trialExitButton.SetActive(false);
@@ -63,6 +68,7 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
 
     public void OnTriaTaskComepleteNextButtonClick()
     {
+        PlayerData.hasPlayerIntroGame = true;
         SceneManager.LoadScene("1MenuAR");
     }
 
@@ -73,10 +79,20 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
         SceneManager.LoadScene("QRCodeTrigger"); //Test for QR code Trigger, would be changed later
     }
     #endregion
+
+    
     public void DisplayStartGameCanvas(bool show)
     {
         startGameCanvas.SetActive(show);
+        GetNumberOfObjectsToFind();
 
+    }
+
+    public void GetNumberOfObjectsToFind(){
+        foreach(var item in content.GetComponentsInChildren<Image>())
+        {
+            foundObjectImages.Add(item);
+        }
     }
 
     public void DisplayGameCanvas(bool show)
@@ -93,35 +109,43 @@ public class ObjectFindingTaskUIManager : MonoBehaviour
         }
     }
 
-    public void DisplayGameWin()
-    {
-        winText.SetActive(true);
-    }
-
 
     int idx = 0;
     public void DisplayObjectFoundUI(string objectName)
     {
-        switch (objectName)
-        {
-            case "SphereRed":
-                foundObjectImages[idx].color = Color.red;
-                break;
-            case "SphereBlue":
-                foundObjectImages[idx].color = Color.blue;
-                break;
+        // switch (objectName)
+        // {
+        //     case "SphereRed":
+        //         foundObjectImages[idx].color = Color.red;
+        //         break;
+        //     case "SphereBlue":
+        //         foundObjectImages[idx].color = Color.blue;
+        //         break;
 
-            case "SphereGreen":
-                foundObjectImages[idx].color = Color.green;
-                break;
-            default:
-                break;
-        }
+        //     case "SphereGreen":
+        //         foundObjectImages[idx].color = Color.green;
+        //         break;
+        //     default:
+        //         break;
+        // }
+        foundObjectImages[idx].color = Color.green;
         idx++;
-        if (idx == foundObjectImages.Count) DisplayGameWin();
+        if (idx == gameManager.complexityLevel) DisplayGameWin();
     }
 
+    public void DisplayGameWin()
+    {
+        gameCanvas.SetActive(false);
+        taskCompletedGameCanvas.SetActive(true);
+    }
 
+    public void OnTaskCompletedContinueButtonClick(){
+        PlayerData.score += 10;
+        gameManager.SetFinishedTaskStatus();
+        SceneManager.LoadScene("QRCodeTrigger");
+    }
+
+    //For testing
     public void OnRestartButtonClick()
     {
         SceneManager.LoadScene("ObjectFindingTask");

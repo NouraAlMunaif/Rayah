@@ -77,6 +77,7 @@ public class MenuUIManager : MonoBehaviour
             if (characterID != 0)
             {
                 selectYourGuideText.color = Color.black;
+                PlayerPrefs.SetString("PlayerName",registerInputField.text);
                 SceneManager.LoadScene("1MenuAR");
             }
             else //when the user has not selected Guide
@@ -94,18 +95,21 @@ public class MenuUIManager : MonoBehaviour
     public void onCharacter1ButtonClick()
     {
         characterID = 1;
+        PlayerData.characterNumber = 0;
         ButtonSelectionColorEffect();
     }
 
     public void onCharacter2ButtonClick()
     {
         characterID = 2;
+        PlayerData.characterNumber = 1;
         ButtonSelectionColorEffect();
     }
 
     public void onCharacter3ButtonClick()
     {
         characterID = 3;
+        PlayerData.characterNumber = 2;
         ButtonSelectionColorEffect();
     }
 

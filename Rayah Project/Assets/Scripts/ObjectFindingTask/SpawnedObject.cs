@@ -28,6 +28,7 @@ public class SpawnedObject : MonoBehaviour
         {
             gameObject.SetActive(false);
             uIManager.DiplayTrialTaskComplete();
+            PlayerData.score += 10;
         }
         else
         {

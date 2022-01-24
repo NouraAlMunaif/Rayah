@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class MenuARUIManager : MonoBehaviour
 {
     [Header("Start Canvas")]
     [SerializeField] GameObject startCanvas;
     [SerializeField] GameObject welcomePanel;
     [SerializeField] GameObject warningPanel;
+    [SerializeField] GameObject tasksPanel;
     [SerializeField] GameObject trialPanel;
+    [SerializeField] Text infoText;
 
     [Header("Intro Canvas")]
     [SerializeField] GameObject introCanvas;
@@ -17,6 +20,8 @@ public class MenuARUIManager : MonoBehaviour
     [SerializeField] GameObject introMenuPanel;
     [SerializeField] GameObject introPhotoModePanel;
     [SerializeField] GameObject introReadyPanel;
+    [SerializeField] Image robotImage;
+    [SerializeField] List<Sprite> robotImages;
 
     [Header("Game Canvas")]
     [SerializeField] GameObject gameCanvas;
@@ -29,6 +34,16 @@ public class MenuARUIManager : MonoBehaviour
     [SerializeField] GameObject characterSpeechHolder;
     [SerializeField] GameObject taskPopUpPanel;
 
+    private void Awake()
+    {
+        if(PlayerData.hasPlayerIntroGame == true)
+        {
+            startCanvas.SetActive(false);
+            introCanvas.SetActive(true);
+            infoText.text = "Hello " + PlayerPrefs.GetString("PlayerName") + "welcome to your journey in Rayah! \n You will be taken through many steps where you encounter tasks and collect points.\n Have Fun!";
+        }
+    }
+
     #region Start Canvas
     public void OnWelcomePanelNextButtonClick()
     {
@@ -40,6 +55,11 @@ public class MenuARUIManager : MonoBehaviour
     public void OnWarningPanelNextButtonClick()
     {
         warningPanel.SetActive(false);
+        tasksPanel.SetActive(true);
+    }
+
+    public void OnTasksPanelNextButtonClick(){
+        tasksPanel.SetActive(false);
         trialPanel.SetActive(true);
     }
 
@@ -78,6 +98,7 @@ public class MenuARUIManager : MonoBehaviour
 
     public void OnIntroPhotoModeNextButtonClick(){
         introPhotoModePanel.SetActive(false);
+        robotImage.sprite = robotImages[PlayerData.characterNumber];
         introReadyPanel.SetActive(true);
     }
 

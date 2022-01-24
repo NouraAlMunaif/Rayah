@@ -317,8 +317,6 @@ struct ARTrackedObjectManager_tD113C9209A6B4F29E3F88BA3EB43824D7F58F6E9;
 struct ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB;
 // System.AsyncCallback
 struct AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA;
-// System.Attribute
-struct Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71;
 // UnityEngine.Experimental.XR.Interaction.BasePoseProvider
 struct BasePoseProvider_t04EB173A7CC01D10EF789D54577ACAEBFAD5B04E;
 // UnityEngine.Behaviour
@@ -341,8 +339,6 @@ struct Cubemap_tB48EEA79C233417AF4D7BF03EA1BE4AA07A5B938;
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t17DD30660E330C49381DAA99F934BE75CB11F288;
-// Microsoft.CodeAnalysis.EmbeddedAttribute
-struct EmbeddedAttribute_tA852A3CA20E730EE88DC894412A45F67219643F6;
 // UnityEngine.GameObject
 struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319;
 // System.IAsyncResult
@@ -357,8 +353,6 @@ struct IRaycaster_tCD3F0CED57B2522576F0E98B8904408EA084112D;
 struct IReferenceImageLibrary_t442603E2283A3DE643D30BC7A02DB47E6F4B6B4F;
 // System.InvalidOperationException
 struct InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB;
-// System.Runtime.CompilerServices.IsReadOnlyAttribute
-struct IsReadOnlyAttribute_t7E1323E011E70323CBF8FD830320EE1929A1EF5C;
 // System.Reflection.MemberFilter
 struct MemberFilter_t48D0AA10105D186AF42428FA532D4B4332CF8B81;
 // UnityEngine.XR.ARFoundation.MeshInfoComparer
@@ -2988,15 +2982,6 @@ public:
 };
 
 
-// Microsoft.CodeAnalysis.EmbeddedAttribute
-struct EmbeddedAttribute_tA852A3CA20E730EE88DC894412A45F67219643F6  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
-{
-public:
-
-public:
-};
-
-
 // System.Enum
 struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
 {
@@ -3304,15 +3289,6 @@ public:
 	{
 		___Zero_1 = value;
 	}
-};
-
-
-// System.Runtime.CompilerServices.IsReadOnlyAttribute
-struct IsReadOnlyAttribute_t7E1323E011E70323CBF8FD830320EE1929A1EF5C  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
-{
-public:
-
-public:
 };
 
 
@@ -11276,8 +11252,6 @@ inline int32_t List_1_get_Count_mDA9333C0B3CD2ADA71DBC99EC96C8B16F247B355_inline
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ARTrackedObjectsChangedEventArgs_ToString_mD4FF710D115521BAE99BB835BC0396A47725D3A0 (ARTrackedObjectsChangedEventArgs_tF1E4435691F4279084D60D08C65C885051BA1453 * __this, const RuntimeMethod* method);
 // UnityEngine.XR.ARSubsystems.Feature UnityEngine.XR.ARSubsystems.FeatureExtensions::Cameras(UnityEngine.XR.ARSubsystems.Feature)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t FeatureExtensions_Cameras_m3814978160FF343F4B295277B62A10A90BE46F7F (uint64_t ___self0, const RuntimeMethod* method);
-// System.Void System.Attribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1 (Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.XR.ARFoundation.HashCode::Combine(System.Int32,System.Int32,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashCode_Combine_mD76CDEE1565B93AFF8FDBE56E7C33C971BCB012F (int32_t ___hash10, int32_t ___hash21, int32_t ___hash32, int32_t ___hash43, const RuntimeMethod* method);
 // System.Int32 UnityEngine.XR.ARFoundation.HashCode::Combine(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
@@ -20338,22 +20312,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_tA5BF3BC504E680A93C43BE72DF1EE238A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m6817CAA1F51E9FD5490289193CAC1B2604F9737B (EmbeddedAttribute_tA852A3CA20E730EE88DC894412A45F67219643F6 * __this, const RuntimeMethod* method)
-{
-	{
-		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 // System.Int32 UnityEngine.XR.ARFoundation.HashCode::Combine(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashCode_Combine_mB733DE32A13A557A4EBF6B13881920FACBCD7C8D (int32_t ___hash10, int32_t ___hash21, const RuntimeMethod* method)
 {
@@ -20501,22 +20459,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashCode_Combine_m4BEDD10A5E2B4876861
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsReadOnlyAttribute__ctor_m100DAF27CB32D081F71B1821014FFE215D7EC8A8 (IsReadOnlyAttribute_t7E1323E011E70323CBF8FD830320EE1929A1EF5C * __this, const RuntimeMethod* method)
-{
-	{
-		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

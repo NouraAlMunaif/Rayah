@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MCQs_UI_Controller : MonoBehaviour
 {
-    public Button nextButton, okButton, exitButton,claimButton;
+    public Button nextButton, okButton, exitButton,claimButton,tryBackButton;
 
     public GameObject settingPanel,introPanel,instruPanel;
     public GameObject coinPanel;
@@ -28,19 +28,14 @@ public class MCQs_UI_Controller : MonoBehaviour
 
     void Start()
     {
+        
         //coinText.text = coinNumber.ToString() + " Points";
-
+        coinText.text = PlayerData.score.ToString();
         nextButton.onClick.AddListener(NextOnClick);
         okButton.onClick.AddListener(OKOnClick);
         exitButton.onClick.AddListener(ExitOnClick);
         claimButton.onClick.AddListener(ClaimOnClick);
-
-        instruPanel.SetActive(false);
-        coinPanel.SetActive(false);
-        question2DPanel.SetActive(false);
-        question3DPanel.SetActive(false);
-        rewardPanel.SetActive(false);
-        postTaskPanel.SetActive(false);
+        tryBackButton.onClick.AddListener(TryAgainBackOnClick);
 
     }
 
@@ -64,35 +59,50 @@ public class MCQs_UI_Controller : MonoBehaviour
 
         Debug.Log("You have clicked ok button!");
     }
-    void ExitOnClick()
+    void ExitOnClick() // Where to exit??
     {
-        settingPanel.SetActive(true);
-        question2DPanel.SetActive(false);
-        question3DPanel.SetActive(false);
-        tryAgainPanel.SetActive(false);
+        SceneManager.LoadScene("QRCodeTrigger");
+        //introPanel.SetActive(true);
+        //settingPanel.SetActive(true);
+        //question2DPanel.SetActive(false);
+        //question3DPanel.SetActive(false);
+        //tryAgainPanel.SetActive(false);
         Debug.Log("You have clicked exit button!");
     }
 
-    void ClaimOnClick()
+    void ClaimOnClick() // CONTINUE Button for final version
     {
-        rewardPanel.SetActive(false);
-        postTaskPanel.SetActive(true);
-        coinPanel.SetActive(true);
+        Debug.Log("You have clicked claim button!");
+        //rewardPanel.SetActive(false);
+        //postTaskPanel.SetActive(true);
+        PlayerPrefs.SetInt("Task_3", 3);
+        SceneManager.LoadScene("QRCodeTrigger"); // CONTINUE TO NEXT SCENE
 
-        coinNumber = coinNumber + 10;
-        coinText.text = coinNumber.ToString() + " Points";
+
+        //coinPanel.SetActive(true);
+
+        //coinNumber = coinNumber + 10;
+        ////coinText.text = coinNumber.ToString() + " Points";
+        //coinText.text = coinNumber.ToString();
 
         //Show Coin
-        Debug.Log("You have clicked claim button!");
+        
     }
 
     public void RightAnswer() //call by answer script
     {
+
+        PlayerData.score += 10;
+        //coinNumber = coinNumber + 10;
+        //coinText.text = coinNumber.ToString() + " Points";
+        coinText.text = PlayerData.score.ToString();
         settingPanel.SetActive(true);
         rewardPanel.SetActive(true);
         question2DPanel.SetActive(false);
         question3DPanel.SetActive(false);
         Debug.Log("RightAnswer Trigger");
+
+
     }
 
     public void WrongAnswer() //call by answer script
@@ -103,7 +113,7 @@ public class MCQs_UI_Controller : MonoBehaviour
         {
             go.GetComponent<Button>().interactable = false;
         }
-        StartCoroutine(TryAgain());
+        //StartCoroutine(TryAgain());
 
     }
 
@@ -112,13 +122,28 @@ public class MCQs_UI_Controller : MonoBehaviour
         SceneManager.LoadScene("QRCodeTrigger");
     }
 
-    IEnumerator TryAgain()
-    {
+    #region previous wait for seconds when try again
+    //IEnumerator TryAgain()
+    //{
 
-        yield return new WaitForSeconds(3);
-        tryAgainPanel.SetActive(false);
+    //    yield return new WaitForSeconds(3);
+    //    tryAgainPanel.SetActive(false);
         
-        foreach(GameObject go in optionButton)
+    //    foreach(GameObject go in optionButton)
+    //    {
+    //        go.GetComponent<Button>().image.sprite = answer;
+    //        go.GetComponent<Button>().interactable = true;
+    //    }
+
+    //    question2DPanel.SetActive(true);
+    //}
+    #endregion
+
+    public void TryAgainBackOnClick()
+    {
+        tryAgainPanel.SetActive(false);
+
+        foreach (GameObject go in optionButton)
         {
             go.GetComponent<Button>().image.sprite = answer;
             go.GetComponent<Button>().interactable = true;

@@ -18,12 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/2ObjectFindingTask.unity
     guid: a5a9bbf4d6331bc458cbea58c481ab10
   - enabled: 1
-    path: Assets/Scenes/MCQs.unity
-    guid: d370a97535824da4db8fec9bdff55933
-  - enabled: 0
     path: Assets/Scenes/ObjectOrderingJourneyTask.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Task3_MCQs.unity
+    guid: d370a97535824da4db8fec9bdff55933
+  - enabled: 1
+    path: Assets/Scenes/Task7_MCQs.unity
+    guid: f745c69d71b558741a36d7ba5b394f8a
+  - enabled: 1
     path: Assets/Scenes/Selfie.unity
     guid: c217c10aff73f0d418ac7b25bdcfe7d2
   m_configObjects:

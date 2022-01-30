@@ -17,10 +17,12 @@ public class AllRightAnswer : MonoBehaviour
     private void Start()
     {
         coinText.text = PlayerData.score.ToString();
+        menuPanel.SetActive(false);
     }
     public void RightAnswerOnClick()
     {
         PlayerPrefs.SetInt("Task_7", 7);
+        menuPanel.SetActive(true);
         rewardPanel.SetActive(true);
         answersPanel.SetActive(false);
         questionPanel.SetActive(false);
@@ -44,6 +46,12 @@ public class AllRightAnswer : MonoBehaviour
         //answersPanel.SetActive(false);
         //questionPanel.SetActive(false);
         //menuPanel.SetActive(true);
+    }
+
+    public void finishTask7()
+    {
+        //PlayerPrefs.SetInt("Task_7", 7);
+        PlayerData.task7Finish = true;
     }
 
 }

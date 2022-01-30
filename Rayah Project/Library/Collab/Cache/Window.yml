@@ -15,15 +15,9 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/StreamingAssets/build_info
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Standalone/Newtonsoft.Json.XML
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Standalone/Newtonsoft.Json.XML.meta
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Windows/Newtonsoft.Json.XML
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Windows/Newtonsoft.Json.XML.meta
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Windows/Newtonsoft.Json.dll
-    - Assets/ThirdParty/Json-NET-for-Unity/Assemblies/Windows/Newtonsoft.Json.dll.meta
     - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 000000000000000000
+    m_Values: 010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

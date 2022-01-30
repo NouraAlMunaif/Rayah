@@ -19,7 +19,17 @@ public class CornerMenuControl : MonoBehaviour
 
     public void MenuOnClick()
     {
+
+        
+    }
+
+    public void YesOnClick()
+    {
         SceneManager.LoadScene("0Menu"); //You can restart your journey at any time via the menu.
+    }
+    public void NoOnClick()
+    {
+
     }
 
     public void PhotoModeOnClick()

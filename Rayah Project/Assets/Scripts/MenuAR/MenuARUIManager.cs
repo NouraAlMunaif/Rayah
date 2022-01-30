@@ -22,6 +22,7 @@ public class MenuARUIManager : MonoBehaviour
     [SerializeField] GameObject introReadyPanel;
     [SerializeField] Image robotImage;
     [SerializeField] List<Sprite> robotImages;
+    
 
     [Header("Game Canvas")]
     [SerializeField] GameObject gameCanvas;
@@ -36,11 +37,12 @@ public class MenuARUIManager : MonoBehaviour
 
     private void Awake()
     {
-        if(PlayerData.hasPlayerIntroGame == true)
+        infoText.text = "Hello " + PlayerPrefs.GetString("PlayerName") + ", Welcome to your journey in Rayah! \n You will be taken through many steps where you encounter tasks and collect points.\n Have Fun!";
+
+        if (PlayerData.hasPlayerIntroGame == true)
         {
             startCanvas.SetActive(false);
             introCanvas.SetActive(true);
-            infoText.text = "Hello " + PlayerPrefs.GetString("PlayerName") + "welcome to your journey in Rayah! \n You will be taken through many steps where you encounter tasks and collect points.\n Have Fun!";
         }
     }
 
@@ -98,7 +100,7 @@ public class MenuARUIManager : MonoBehaviour
 
     public void OnIntroPhotoModeNextButtonClick(){
         introPhotoModePanel.SetActive(false);
-        robotImage.sprite = robotImages[PlayerData.characterNumber];
+        robotImage.sprite = robotImages[PlayerData.characterNumber - 1];
         introReadyPanel.SetActive(true);
     }
 

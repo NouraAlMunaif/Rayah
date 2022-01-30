@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: d370a97535824da4db8fec9bdff55933
   - enabled: 1
     path: Assets/Scenes/Task7_MCQs.unity
-    guid: f745c69d71b558741a36d7ba5b394f8a
+    guid: 38b72c7c0784cbb4682eec0739ab4134
   - enabled: 1
     path: Assets/Scenes/Selfie.unity
     guid: c217c10aff73f0d418ac7b25bdcfe7d2

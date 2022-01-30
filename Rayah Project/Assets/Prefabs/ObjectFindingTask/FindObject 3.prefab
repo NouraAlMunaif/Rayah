@@ -186,11 +186,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3949685744167994528}
-  - component: {fileID: 7020551127297044974}
-  - component: {fileID: 1514508680429500409}
   m_Layer: 0
   m_Name: FindObject 3
-  m_TagString: FindableObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,31 +208,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7020551127297044974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3949685744167994529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62be43f34c588b848892e30313b19db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!135 &1514508680429500409
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3949685744167994529}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.85265756
-  m_Center: {x: -0.06827295, y: 0, z: 0.2843846}
 --- !u!1 &5761732109754720848
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,9 +219,10 @@ GameObject:
   - component: {fileID: 4953423574805526762}
   - component: {fileID: 9166637602573872134}
   - component: {fileID: 4288403492374084630}
+  - component: {fileID: 4086231396147639799}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: FindableObject
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +236,7 @@ Transform:
   m_GameObject: {fileID: 5761732109754720848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.22, y: 0, z: 1.86}
-  m_LocalScale: {x: 0.58586, y: 0.58586, z: 0.58586}
+  m_LocalScale: {x: 1.1482856, y: 1.1482856, z: 1.1482856}
   m_Children:
   - {fileID: 7918149907189618014}
   - {fileID: 1550453086693953575}
@@ -294,6 +268,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8410741
   m_Center: {x: -0.22360435, y: 0, z: 0.11746961}
+--- !u!95 &4086231396147639799
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5761732109754720848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3c10544059d14a6a9b4926d5ecf7f12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8075118510151474820
 GameObject:
   m_ObjectHideFlags: 0

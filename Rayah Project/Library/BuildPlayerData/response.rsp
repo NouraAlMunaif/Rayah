@@ -28,7 +28,6 @@
 -s="/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Assets/ThirdParty/CSCore"
 -s="/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime"
 -s="/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom"
--s="/Users/nimajamalian/Documents/Unity Projects/Rayah Project/Assets/ThirdParty/Json-NET-for-Unity/Assemblies/AOT"
 -s="/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/Managed/UnityEngine"
 -s="/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api"
 -s="/Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades"

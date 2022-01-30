@@ -25,4 +25,12 @@ public static class PlayerData{
     player score
     */
     public static int score = 0;
+
+    public static bool task1Finish;
+    public static bool task2Finish;
+    public static bool task3Finish;
+    public static bool task4Finish;
+    public static bool task5Finish;
+    public static bool task6Finish;
+    public static bool task7Finish;
 }

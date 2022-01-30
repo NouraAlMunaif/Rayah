@@ -14,6 +14,7 @@ public class MenuUIManager : MonoBehaviour
 
     [Header("Start Canvas")]
     [SerializeField] GameObject createJourneyPanel;
+    [SerializeField] GameObject BlurPanel;
 
     [Header("User Registration Canvas")]
     [SerializeField] GameObject registerCanvas;
@@ -23,9 +24,30 @@ public class MenuUIManager : MonoBehaviour
     public int characterID = 0;
     [SerializeField] GameObject[] charactersButtons;
     [SerializeField] Animator[] characterButtonsAnimation;
+    [SerializeField] GameObject userRegisterGroup;
+    [SerializeField] Animator registerAnimator;
+
+    [Header("Character Selection")]
+    [SerializeField] Sprite[] characterImages;
 
     bool isUserMale = false;
     bool isUserFemale = false;
+
+    private void Start()
+    {
+        Application.targetFrameRate = 300;
+    }
+
+    private void Update()
+    {
+        if(registerInputField.isFocused == true)
+        {
+            registerAnimator.SetBool("isInputFieldActive", true);
+        } else
+        {
+            registerAnimator.SetBool("isInputFieldActive", false);
+        }
+    }
 
     #region Start Canvas
     public void OnNationalMuseumButtonClick()
@@ -37,12 +59,14 @@ public class MenuUIManager : MonoBehaviour
 
     public void OnCreateYourJourneyButtonClick()
     {
+        BlurPanel.SetActive(true);
         createJourneyPanel.SetActive(true);
     }
 
     public void OnCreateYourJourneyContinueButtonClick()
     {
         createJourneyPanel.SetActive(false);
+        BlurPanel.SetActive(false);
     }
     #endregion
 
@@ -74,7 +98,7 @@ public class MenuUIManager : MonoBehaviour
         else
         {//when there is a input
             enterYourNameText.color = Color.black;
-            if (characterID != 0)
+            if (PlayerData.characterNumber != 0)
             {
                 selectYourGuideText.color = Color.black;
                 PlayerPrefs.SetString("PlayerName",registerInputField.text);
@@ -94,38 +118,77 @@ public class MenuUIManager : MonoBehaviour
 
     public void onCharacter1ButtonClick()
     {
-        characterID = 1;
-        PlayerData.characterNumber = 0;
-        ButtonSelectionColorEffect();
+        //characterID = 1;
+
+        //PlayerData.characterNumber = 0;
+        //ButtonSelectionColorEffect();
+        BringCharacterButtonInTheMiddle(0);
+        FindTheSelecctedCharacter();
+        Debug.Log(PlayerData.characterNumber);
     }
 
-    public void onCharacter2ButtonClick()
+    public void onCharacter2ButtonClick()//The main button
     {
-        characterID = 2;
-        PlayerData.characterNumber = 1;
-        ButtonSelectionColorEffect();
+        //characterID = 2;
+        //PlayerData.characterNumber = 1;
+        //ButtonSelectionColorEffect();
+        BringCharacterButtonInTheMiddle(1);
+        FindTheSelecctedCharacter();
+        Debug.Log(PlayerData.characterNumber);
     }
 
     public void onCharacter3ButtonClick()
     {
-        characterID = 3;
-        PlayerData.characterNumber = 2;
-        ButtonSelectionColorEffect();
+        //characterID = 3;
+        //PlayerData.characterNumber = 2;
+        //ButtonSelectionColorEffect();
+        BringCharacterButtonInTheMiddle(2);
+        FindTheSelecctedCharacter();
+        Debug.Log(PlayerData.characterNumber);
     }
 
-    private void ButtonSelectionColorEffect()
+    private void FindTheSelecctedCharacter()
     {
-        for (int i = 0; i < charactersButtons.Length; i++)
+        switch (charactersButtons[1].GetComponent<Image>().sprite.name)
         {
-            if (i == characterID - 1)
-            {
-                charactersButtons[i].GetComponent<Image>().color = Color.gray;
-            }
-            else
-            {
-                charactersButtons[i].GetComponent<Image>().color = Color.white;
-            }
+            case "BlackRobot":
+                PlayerData.characterNumber = 1;
+                break;
+            case "RedRobot":
+              PlayerData.characterNumber = 2;
+                break;
+            case "BlueRobot":
+                PlayerData.characterNumber = 3;
+                break;
+            default:
+                break;
         }
+    }
+ 
+
+    //private void ButtonSelectionColorEffect()
+    //{
+    //    for (int i = 0; i < charactersButtons.Length; i++)
+    //    {
+    //        if (i == characterID - 1)
+    //        {
+    //            charactersButtons[i].GetComponent<Image>().color = Color.gray;
+    //        }
+    //        else
+    //        {
+    //            charactersButtons[i].GetComponent<Image>().color = Color.white;
+    //        }
+    //    }
+    //}
+
+    private void BringCharacterButtonInTheMiddle(int selectedButtonNumber)
+    {
+        Sprite tempMiddleImage = charactersButtons[1].GetComponent<Image>().sprite;
+        //Chnage the Main(Middle) Button image
+        charactersButtons[1].GetComponent<Image>().sprite = charactersButtons[selectedButtonNumber].GetComponent<Image>().sprite;
+        charactersButtons[1].GetComponent<Image>().color = Color.gray; //gray out the middle selection
+        charactersButtons[selectedButtonNumber].GetComponent<Image>().sprite = tempMiddleImage;
+
     }
 
     #endregion

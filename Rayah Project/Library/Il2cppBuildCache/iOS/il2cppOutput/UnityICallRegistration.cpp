@@ -106,6 +106,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_ResetTriggerString();
 		Register_UnityEngine_Animator_ResetTriggerString();
 
+		//System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+		void Register_UnityEngine_Animator_SetBoolString();
+		Register_UnityEngine_Animator_SetBoolString();
+
 		//System.Void UnityEngine.Animator::SetIntegerString(System.String,System.Int32)
 		void Register_UnityEngine_Animator_SetIntegerString();
 		Register_UnityEngine_Animator_SetIntegerString();

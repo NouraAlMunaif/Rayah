@@ -37,6 +37,15 @@ public class MCQs_UI_Controller : MonoBehaviour
         claimButton.onClick.AddListener(ClaimOnClick);
         tryBackButton.onClick.AddListener(TryAgainBackOnClick);
 
+        //question2DPanel.SetActive(true);
+        //question3DPanel.SetActive(true);
+
+        //instruPanel.SetActive(false);
+        settingPanel.SetActive(false);
+        //rewardPanel.SetActive(false);
+
+        MCQs_Spawn_Manager.instance.generateQuestion();
+
     }
 
     void NextOnClick()
@@ -75,7 +84,8 @@ public class MCQs_UI_Controller : MonoBehaviour
         Debug.Log("You have clicked claim button!");
         //rewardPanel.SetActive(false);
         //postTaskPanel.SetActive(true);
-        PlayerPrefs.SetInt("Task_3", 3);
+        //PlayerPrefs.SetInt("Task_3", 3);
+        PlayerData.task3Finish = true;
         SceneManager.LoadScene("QRCodeTrigger"); // CONTINUE TO NEXT SCENE
 
 
